@@ -94,7 +94,7 @@ class DBConnect {
     public function logout(){
         session_start();
         session_destroy();
-       header("Location: http://remotemysql.com/dbms");
+       header("Location: https://bloodbank-managementsystem.herokuapp.com/");
     }
     
     public function getDonorProfileById($id){

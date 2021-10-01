@@ -94,7 +94,7 @@ class DBConnect {
     public function logout(){
         session_start();
         session_destroy();
-        header("Location: http://remotemysql.com/dbms");
+        header("Location: http://remotemysql.com/dbms/index.php");
     }
     
     public function getDonorProfileById($id){

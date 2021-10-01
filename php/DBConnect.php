@@ -2,7 +2,7 @@
 class DBConnect {
     private $db = NULL;
 
-    const DB_SERVER = " remotemysql.com";
+    const DB_SERVER = "remotemysql.com";
     const DB_USER = "bP3zKgkOBe";
     const DB_PASSWORD = "8WdRnE0GA8";
     const DB_NAME = "bP3zKgkOBe";
@@ -21,13 +21,13 @@ class DBConnect {
     public function auth(){
         session_start();
         if(! isset($_SESSION['username'])){
-            header("Location: http://localhost/dbms");
+            header("Location: http://remotemysql.com/dbms");
         }       
     }
     public function authLogin(){
         session_start();
         if(isset($_SESSION['username'])){
-            header("Location: http://localhost/dbms/home.php");
+            header("Location: http://remotemysql.com/dbms/home.php");
         }
     }
     
@@ -94,7 +94,7 @@ class DBConnect {
     public function logout(){
         session_start();
         session_destroy();
-        header("Location: http://localhost/dbms/");
+        header("Location: http://remotemysql.com/dbms/");
     }
     
     public function getDonorProfileById($id){

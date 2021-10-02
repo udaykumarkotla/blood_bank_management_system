@@ -51,7 +51,7 @@
 	<div class="border" >
 	<nav class="navigation">
 		<ul>
-		<a href="HOME.php"><b>BLOOD BANK</b></a>
+		<a href="https://bloodbank-managementsystem.herokuapp.com/home.php"><b>BLOOD BANK</b></a>
 		<ul>
 	</nav>	
 	<div class="navbar">
